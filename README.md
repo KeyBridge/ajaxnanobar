@@ -3,7 +3,7 @@
 Fork of **nanobar** to bind with JSF ajax status events.
 Basically a clean replacement for the Primefaces `AjaxStatus` widget.
 
-### Load
+## Load
 
 Load either the full or minified JS file on your JSF page by adding `ajaxnanobar.js`  or `ajaxnanobar.min.js` to your xhtml file
 
@@ -14,7 +14,7 @@ Load either the full or minified JS file on your JSF page by adding `ajaxnanobar
 Everything else is automatic.
 
 
-### Move bar
+## Move bar
 
 If you want to tinker you can manually resize the bar with `nanobar.go(percentage)`
 
@@ -23,7 +23,7 @@ If you want to tinker you can manually resize the bar with `nanobar.go(percentag
   * `percentage` `<Number>` : percentage width of nanobar
 
 
-## Example
+# Example
 
 ```javascript
 //move bar
@@ -35,7 +35,7 @@ nanobar.go( 76 ); // size bar 76%
 nanobar.go(100);
 ```
 
-### Customize bars
+# Customize bars
 
 Nanobar injects a style tag in your HTML head. Bar divs has class `.bar`, and its containers `.nanobar`, so you can overwrite its values.
 
@@ -55,8 +55,13 @@ Default css:
   background:#000;
 }
 ```
-   
-## References
+
+# History
+
+  v1.0.0 - clean fork from Nanobar 06/30/18
+
+
+# References
 
   * [nanobar](https://github.com/jacoborus/nanobar)
   * [ajax status](https://stackoverflow.com/questions/7880843/show-loading-progress-when-making-jsf-ajax-request)
