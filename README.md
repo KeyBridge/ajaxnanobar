@@ -58,7 +58,7 @@ Default css:
    
 ## References
 
-  * [nanobar]()https://github.com/jacoborus/nanobar)
+  * [nanobar](https://github.com/jacoborus/nanobar)
   * [ajax status](https://stackoverflow.com/questions/7880843/show-loading-progress-when-making-jsf-ajax-request)
   * Chapter 13.3.5.2 of the [JSF 2.0 specification](https://jcp.org/aboutJava/communityprocess/final/jsr314/index.html)
 
