@@ -1,66 +1,28 @@
-![nanobar](https://raw.githubusercontent.com/jacoborus/nanobar/master/brand/nanobar.png 'nanobar logo')
-=======================================================================================================
+# AJAX nanobar
 
-Very lightweight progress bars (~699 bytes gzipped).
-
-Compatibility: iE7+ and the rest of the world
-
-[![npm version](https://badge.fury.io/js/nanobar.svg)](https://www.npmjs.com/package/nanobar) [![Bower version](https://img.shields.io/bower/v/nanobar.svg?maxAge=2592000)](https://github.com/jacoborus/nanobar/releases)
-
-## Demo
-
-See [nanobar.jacoborus.codes](http://nanobar.jacoborus.codes)
-
-
-## Installation
-
-Download and extract the [latest release](https://github.com/jacoborus/nanobar/archive/master.zip) or install with package manager:
-
-[Bower](http://bower.io/):
-
-```
-$ bower install nanobar
-```
-
-[npm](https://www.npmjs.org/package/nanobar):
-
-```
-$ npm install nanobar
-```
-
+Fork of **nanobar** to bind with JSF ajax status events.
 
 ## Usage
 
+This is basically a replacement for the Primefaces `AjaxStatus` widget.
+
 ### Load
 
-Link `nanobar.js` from your html file
+Load either the full or minified JS file on your JSF page. 
 
-```html
-<script src="path/to/nanobar.min.js"></script>
+
+Link `ajaxnanobar.js`  or `ajaxnanobar.min.js` from your html file
+
+```xml
+<h:outputScript library="js" name="ajaxnanobar.min.js"/>
 ```
 
-or require it:
-
-```js
-var Nanobar = require('path/to/nanobar');
-```
-
-### Generate progressbar
-
-```js
-var nanobar = new Nanobar( options );
-```
-
-**options**
-
-- `id` `<String>`: (optional) id for **nanobar** div
-- `classname` `<String>`: (optional) class for **nanobar** div
-- `target` `<DOM Element>`: (optional) Where to put the progress bar, **nanobar** will be fixed to top of document if no `target` is passed
+Everything else is automatic.
 
 
 ### Move bar
 
-Resize the bar with `nanobar.go(percentage)`
+You can manually resize the bar with `nanobar.go(percentage)`
 
 **arguments**
 
@@ -68,17 +30,6 @@ Resize the bar with `nanobar.go(percentage)`
 
 
 ## Example
-
-Create bar
-
-```js
-var options = {
-	classname: 'my-class',
-  id: 'my-id',
-	target: document.getElementById('myDivId')
-};
-
-var nanobar = new Nanobar( options );
 
 //move bar
 nanobar.go( 30 ); // size bar 30%
@@ -108,12 +59,12 @@ Default css:
   background:#000;
 }
 ```
+   
+## References
 
-You should know what to do with that ;)
+  * [nanobar]()https://github.com/jacoborus/nanobar)
+  * [ajax status](https://stackoverflow.com/questions/7880843/show-loading-progress-when-making-jsf-ajax-request)
+  * Chapter 13.3.5.2 of the [JSF 2.0 specification](https://jcp.org/aboutJava/communityprocess/final/jsr314/index.html)
 
 
-<br><br>
-
----
-
-© 2016 [jacoborus](https://github.com/jacoborus) - Released under [MIT License](https://raw.github.com/jacoborus/nanobar/master/LICENSE)
+© 2016/2018 the authors [jacoborus](https://github.com/jacoborus) and [keybridge](https://github.com/keybridge) - Released under **MIT License**
