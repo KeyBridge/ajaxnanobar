@@ -1,8 +1,10 @@
 /*
- * Original Copyright (c) 2014 Jacobo Tabernero - github.com/jacoborus
+ * Original Copyright (c) 2014 Jacobo Tabernero
  * https://github.com/jacoborus/nanobar
  * The MIT License (MIT)
+ *
  * Edits and improvements Copyright 2018 Key Bridge.
+ * https://github.com/KeyBridge/ajaxnanobar
  */
 (function (root) {
   'use strict'
